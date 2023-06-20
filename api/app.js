@@ -3,7 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 import './database/database'
 import TelegramBot from './plugings/telegram'
-import { actudalDate } from "./utils/date";
+import { actudalDate } from "./utils/formatDate";
 
 const app = express();
 
