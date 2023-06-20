@@ -11,7 +11,6 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 
 // Middlewares
-/*Funciones intermedias entre una petición y una respuesta*/
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors());
@@ -21,6 +20,6 @@ app.use(cors());
 
 const getDate = actudalDate();
 
-TelegramBot.sendMessageTo(`Servidor ${process.env.enviroment || 'Producción'} iniciado \nHora : ${getDate}`)
+// TelegramBot.sendMessageTo(`Servidor ${process.env.enviroment || 'Producción'} iniciado \nHora : ${getDate}`)
 
 export default app;
