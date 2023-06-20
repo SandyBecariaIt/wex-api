@@ -10,7 +10,8 @@ const chats = [1386425395, 796353582, 153611398];
 
 exports.sendMessageTo = (message) => {
   chats.forEach(item => {
-    bot.sendMessage(1386425395, message);
+    console.log(item)
+    bot.sendMessage(item, message);
   })
 }
 
