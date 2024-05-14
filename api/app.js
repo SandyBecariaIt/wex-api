@@ -1,7 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import mongoose from 'mongoose';
+import movilRouters from "./routers/movil.routers";
 // tengo que importar las rutas aquí. 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors())
 
 // Routers
-
+app.use(movilRouters);
 
 
 export default app;
